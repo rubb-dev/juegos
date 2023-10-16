@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .nav-left ul {
+    display: flex;
+    list-style: none;
+    margin-right: auto;
+  }
+  
+  .nav-left li {
+    margin: 0 1em;
+  }
+  
+  .nav-left a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .nav-right ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-right li {
+    margin: 0 1em;
+  }
+  
+  .nav-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+ 
+  
+  main {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .orange-button {
+    width: 10em;
+    height: 10em;
+    background-color: orange;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .green-button {
+    width: 10em;
+    height: 10em;
+    background-color: green;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #burger,
+    #salir {
+        display: none;
+    }
+
+ 
+
+/* Estilos para pantallas menores a 700px */
+@media screen and (max-width: 700px) {
+  #burger ,
+  #salir{
+    display: block;
+  }
+  
+  i {
+    cursor: pointer;
+    margin-top: .2em;
+}
+
+.nav-right {
+    display: none;
+}
+
+
+.nav-right.mostrar {
+    display: block;
+}
+
+.nav-right {
+    position: fixed;
+    z-index: 999;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background: rgb(182, 222, 248);
+    height: 100vh;
+    padding: 1em
+}
+.nav-right ul{
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.salir {
+    margin: 0.5em;
+    float: right;
+}
+  .buttons-container {
+      flex-direction: column;
+    }
+  
+    .green-button {
+      width: 5.5em;
+      height: 5em;
+    }
+    .orange-button {
+      width: 5.5em;
+      height: 5em;
+      
+    }
+}
+  
+  html,
+  body {
+  height: 100%;
+  overflow: hidden;
+  }
+
+
+  
